@@ -20,16 +20,17 @@
                 <li><a href="about-us.html" target="_self">About</a></li>
                 <li><a href="service.html"target="_self">Services</a></li>
                 <li><a href="contact-us.html"target="_self">Contact</a></li>
-                <li><button class="btn btn-secondary">205-566-4444</button></li>
+                <a href="contact-us.html">
+                <li><button  class="btn btn-secondary">205-566-4444</button></li></a>
 
             </ul>
             <img src="/img/menu.svg" alt="menu" class="menu-btn">
             </nav>
             <div class="main-content">
-                <h1 class="intro-heading">Adopt the pace of</h1>
-                <h1 class="main heading">nature</h1>
+                <h1 class="intro-heading">Create Your Own</h1>
+                <h1 class="main heading">sunshine</h1>
                 <p>Look deep into nature, and you will understand everyrhing better</p>
-                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-primary">About Us</button>
             </div>
         </div>
     </div>
@@ -66,5 +67,15 @@
            <p>Love Nature by Rimsha Aleem</p>
         </div>
        </section>
+
+       <script>
+        const navBtn = document.querySelector('.menu-btn');
+        const navList = document.querySelector('.nav-list');
+        navBtn.addEventListener("click",function(){
+           navList.classList.toggle("active"); 
+        });
+
+
+     </script>
 </body>
 </html>
